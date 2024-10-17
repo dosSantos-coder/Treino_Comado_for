@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* Tabuada com o comando For 
+        for(var x = 1; x<= 10; x++){
+            document.write('1 x ' + x + ' = ' + (1 * x) + '<br>')
+           
+        }
+        document.write('<hr>')
+        for(var x = 1; x<= 10; x++){
+            document.write('1 x ' + x + ' = ' + (2 * x) + '<br>')
+        }
+    */
+    
+    let repeticao, maior , num
+    let lista_numeros = []
+    
+
+    
+    for(repeticao = 1; repeticao <= 3; repeticao++){
+
+    num = prompt('Digite o seu ' + repeticao + '° ' + 'número ')    
+
+    lista_numeros.push(num)
+    
+    }
+    maior = Math.min(...lista_numeros)
+
+    console.log('O maior número é: ', maior)
+
+    </script>
+</body>
+</html>
